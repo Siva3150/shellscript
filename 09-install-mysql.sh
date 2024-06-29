@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 
-if ($ID - ne 0)
+if [ $ID - ne 0 ]
 then 
  echo "Run the system with root user"
 else
