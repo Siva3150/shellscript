@@ -7,6 +7,6 @@ then
   echo "Error:: Run the system with root user"
 else
   echo "You are root user"
- fi
+fi
 
 yum install mysql -y
