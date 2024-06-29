@@ -2,11 +2,12 @@
 
 ID=$(id -u)
 
-if [ $ID - ne 0 ];
+if [ $ID - ne 0 ]
 then 
   echo "Error:: Run the system with root user"
+  exit 1 #you can give other than 0
 else
   echo "You are root user"
-fi
+fi #fi means reverse of if, means condition end
 
 yum install mysql -y
